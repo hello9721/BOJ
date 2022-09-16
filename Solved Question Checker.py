@@ -41,6 +41,9 @@ for i in range(len(b)):
         name.append(b[i+1])  
 
 lst = []
+no_lst = []
+
+converter = [0] * len(num)
 
 while 1:
     try:
@@ -52,12 +55,29 @@ while 1:
         n = num.index(c)
         st = num[n] + " " + name[n]
         print(f"{st}.py")
-
-        lst.append(st)
+        
+        if st in lst:
+            continue
+        else:
+            lst.append(st)
         
     except:
         print(f"\n[ {c} ] 는 목록에 없습니다. 다시 입력해주세요.\n")
         continue
 
+print("\n\n> 검색 기록 --------\n\n")
+
 for i in lst:
     print(i)
+
+print("\n\n> 검색 되지 않음 ---- \n\n")
+
+for i in range(len(num)):
+    for j in lst:
+        if num[i] in j:
+            converter[i] += 1
+            
+for i in range(len(converter)):
+    if converter[i] == 0:
+        print(f"{num[i]} {name[i]}")
+
