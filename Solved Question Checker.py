@@ -40,6 +40,8 @@ for i in range(len(b)):
         num.append(k[1])
         name.append(b[i+1])  
 
+lst = []
+
 while 1:
     try:
         c =  input()
@@ -48,7 +50,14 @@ while 1:
             break
         
         n = num.index(c)
-        print(f"{num[n]} {name[n]}.py")
+        st = num[n] + " " + name[n]
+        print(f"{st}.py")
+
+        lst.append(st)
+        
     except:
         print(f"\n[ {c} ] 는 목록에 없습니다. 다시 입력해주세요.\n")
         continue
+
+for i in lst:
+    print(i)
