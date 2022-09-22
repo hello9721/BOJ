@@ -1,7 +1,7 @@
 ### Baekjoon Online Judge  
 #### 파이썬 / C# 백준 문제
 
-#### Solved Question Check 사용법
+#### Solved Question Checker 사용법
 
       1. Solved.ac 사이트에 접속하여 로그인 한다.
       2. 본인 프로필에 들어가서 프로필 안쪽 부분의 '문제' 탭 접속
