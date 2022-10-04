@@ -1,7 +1,7 @@
 ### Baekjoon Online Judge  
 #### 파이썬 / C# 백준 문제
 
-#### Solved Question Checker 사용법
+#### Q_Checker > Solved Question Checker v1 사용법
 
       1. Solved.ac 사이트에 접속하여 로그인 한다.
       2. 본인 프로필에 들어가서 프로필 안쪽 부분의 '문제' 탭 접속
@@ -23,4 +23,12 @@
       9-1. BOJ_list.txt 라는 이름으로 저장되는데 새로 저장하려면 '1' 입력
                                        저번과 이어서 저장하려면 '2' 입력
         ** 해당 위치에 똑같은 이름의 파일이 있는데 새로 저장을 선택할 시에는 그 파일에 덮어쓰기가 된다.
+        
+#### Q_Checker > Solved Question Checker v2 사용법
+
+      1. bs4와 request 패키지를 설치한다.
+      2. 파일을 실행한다.
+      3. 검색할 번호를 입력한다. ( 백준 웹 페이지에서 자동으로 제목을 긁어온다. )
+      4. 종료할 시 e를 입력한다. ( 종료 시 검색 목록이 출력된다. )
+
 #### 푼 문제 목록은 Q_list 폴더의 Python.md 혹은 Csharp.md 참고
