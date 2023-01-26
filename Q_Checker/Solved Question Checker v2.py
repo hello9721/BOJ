@@ -1,4 +1,5 @@
 from urllib.request import urlopen as u
+from urllib.request import Request as req
 from bs4 import BeautifulSoup as b
 
 check_li = []
@@ -18,7 +19,8 @@ while 1:
             print("\n종료합니다.")
             break
 
-        html = u(f"https://www.acmicpc.net/problem/{q}")
+        re = req(f"https://www.acmicpc.net/problem/{q}", headers={'User-Agent': 'Mozilla/5.0'})
+        html = u(re)
         ob = b(html, "html.parser")
 
         num = ob.body.find("span", {"id":"problem_title"})
